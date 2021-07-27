@@ -12,7 +12,7 @@ class JythonTests(unittest.TestCase):
         self.assertTrue(isinstance(func, types.FunctionType))
         pass
 
-    def test_identifyFunction_Or_Method(self):
+    def test_classMethod_isNotFunctionType(self):
         class Work:
             def show(self):
                 pass
